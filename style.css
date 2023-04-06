@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Neucha&family=Poppins:wght@400;500;800&family=Roboto:wght@300&family=Source+Sans+3:wght@300&display=swap');
+:root {
+    --clr-green: rgb(85, 151, 85);
+    --clr-white: #ffffff;
+    --clr-black: rgba(1, 1, 1, 0.885);
+    --ff-primary: 'Poppins', sans-serif;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow: none;
+
+}
+body{
+    font-size: 2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    background-color:black;
+    /* border-bottom: 1px solid var(--clr-black); */
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+.navbar img{
+width: 12%;
+height: 60px;
+margin-left: 50px;
+}
+ul{
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 50px;
+    margin-right: 80px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.links a {
+    font-size: 1.1rem;
+    font-style: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight: bold;
+    padding: 0.75rem 0;
+    /* gap: 150px; */
+}
+
+.links a:hover {
+    font-size: 1.5rem;
+    transition: var(--transition);
+    color: #45b249;
+}
+
+
+.homee{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    padding: 200px 50px ;
+    /* gap: 60px; */
+}
+.home1{
+    width: 60%;
+    /* text-align: center; */
+    margin-top: 100px;
+}
+.home2 img{
+    height: 50%;
+    margin-right: -300px;
+}
+footer{
+    background-color: var(--clr-black);
+}
+footer p{
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* align-items: baseline; */
+    margin: auto 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.span{
+    display: none;
+}
+
+/* ABOUT */
+.about{
+    /* display: flex; */
+    justify-content: space-between;
+    /* margin-right: 150px; */
+    padding: 100px 100px ;
+    /* gap: 60px; */
+    margin-left: 50px;
+}
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin-left: -150px;
+    color: var(--clr-green);
+}
+.titl{
+    text-align: center;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--clr-green);
+}
+.about1{
+    width: 90%;
+    text-align: justify;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;   padding: 10px;
+}
+.about1 p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 100%;
+}
+.missionnvision{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 60px;
+    align-items: center;
+    margin-left: -50px;
+}
+.mission{
+    text-align: center;
+    border: 1px solid var(--clr-green);
+    background-color: #45b249;
+    height: 25rem;
+    border-radius: 30px;
+}
+.missiom{
+    margin-top: 10px;
+}
+
+.visiom{
+    text-align: center;
+    border: 1px solid var(--clr-green);
+    background-color: var(--clr-black);
+    height: 25rem;
+    border-radius: 30px;  
+    color: var(--clr-white);
+}
+.vision{
+    margin-top: 10px;
+}
+
+.services{
+    /* display: flex; */
+    justify-content: space-between;
+    margin-right: 100px;
+    padding: 200px 50px ;
+}
+.about12{
+    width: 90%;
+    /* text-align: center; */
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;   padding: 10px;
+}
+.good{
+padding: 150px;
+}
+.text-3xl{
+    text-align: center;
+}
+#tags{
+    color: white;
+}
+#tags:hover {
+    font-size: 1.5rem;
+    transition: var(--transition);
+    color: #45b249;
+}
