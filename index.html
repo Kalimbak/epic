@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
     <header>                                                                                                                                                      
       <nav class="navbar">
         <img src="/epic carreers grey/epic carreers.png" alt="">
@@ -35,54 +36,18 @@
       <div class="homee">
         <div class="home1">
           <p>
-            Welcome to our organization's website, where we use data analytics to
+            Welcome to EPIC CARRERS, where we use data analytics to
             provide personalized career guidance to high school students and offer
           opportunities for them to study abroad.  
-        </p>
-         <span id="more" >
-          <p>
             We believe that all students deserve access to accurate and reliable
             information to help them make informed decisions about their future
-            career paths. Our organization uses a variety of data sources, including
-            labor market data, employment statistics, and educational requirements,
-            to analyze and interpret information about various careers. This allows
-            us to provide personalized career profiles for each student, which
-            includes information about their skills, interests, and career goals.
-            Our goal is to help students identify their strengths and interests,
-            explore potential career paths, and make informed decissions about their
-            future education and career choices.
+            career paths. 
           </p>
-          <p>
-            In addition to our career guidance services, we offer opportunities for
-            high school students to study abroad. Our study abroad programs are
-            designed to provide students with a unique educational experience that
-            enhances their academic, personal, and professional development. We
-            offer a range of programs, including semester-long and year-long
-            programs, language immersion programs, and internship programs. Our team
-            works with trusted partners and reputable institutions to ensure the
-            safety and well-being of our students while they are abroad.
-          </p>
-          <p>
-            We believe that studying abroad can provide students with a global
-            perspective that is essential in today's interconnected world. Our study
-            abroad programs allow students to experience different cultures, meet
-            new people, and develop language skills. We believe that these
-            experiences can enhance their academic and personal growth, as well as
-            their future career prospects.
-          </p>
-          <p>
-            At our organization, we are committed to providing high school students
-            with the tools and resources they need to succeed. We offer free career
-            guidance services to all high school students and work to ensure that
-            our study abroad programs are accessible and affordable. We believe that
-            every student deserves the opportunity to explore their potential and
-            pursue their dreams. Thank you for visiting our website. We invite you
-            to explore our services and learn more about how we can help you achieve
-            your goals. If you have any questions or would like to learn more,
-            please do not hesitate to contact us.
-          </p>
+         <span id="more" >
+
           </span>
-          <button onclick="read()" id="btn" class="span1">Read more</button>
+          <!-- <button  id="btn" class="span1">Read more</button> -->
+          <a href="/about.html" class="span1"> Discover more</a>
 
         </div>
         <div class="home2">
@@ -93,10 +58,67 @@
       <p><span id="dots"></span><span id="more"></span></p>
     </section>
     <footer>
-      <p>
-        &copy; epic careers
-        <span class="date"> </span> .all rights reserved
-      </p>
+     
+      <section id="contacts" class="section">
+        <div class="title">
+          <h2>contact <span>us</span></h2>
+        </div>
+        <div class="underline"></div>
+        <form class="input-form">
+          <div class="contact-details">
+            <div class="contact-list">
+              <h4>
+                <i class="fa-solid fa-envelope"></i> email:
+                <span class="epic-email"
+                  ><a href="#">epiccareersrw@gmail.com</a></span
+                >
+              </h4>
+              <h4>
+                <i class="fa-solid fa-phone"></i> phone:
+                <span>(+250) 789 772 350</span>
+              </h4>
+            </div>
+            <div class="vl"></div>
+            <div>
+              <h4 class="msg">leave us a message here:</h4>
+              <label for="fname">first name:</label>
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+                class="input first-name"
+              /><br />
+              <label for="lname">last name:</label>
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+                class="input last-name"
+              /><br />
+              <label for="email">email:</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="e.g: example@gmail.com"
+                class="input email"
+              /><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="text-area"
+              ></textarea
+              ><br />
+              <button type="submit" class="submit-btn">send message</button>
+            </div>
+          </div>
+        </form>
+        <p>
+          &copy; epic careers
+          <span class="date"> </span> .all rights reserved
+        </p>
+      </section>
     </footer>
 
     
