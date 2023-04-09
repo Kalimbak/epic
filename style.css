@@ -93,9 +93,10 @@ a{
     /* text-align: center; */
     margin-top: 100px;
 }
-.home2 img{
-    height: 50%;
-    margin-right: -300px;
+/* .home2  */
+img{
+    height: 700px;
+    /* margin-right: -300px; */
 }
 footer{
     background-color: var(--clr-black);
@@ -112,7 +113,16 @@ footer p{
 .span{
     display: none;
 }
-
+.span1{
+    color: var(--clr-green);
+    font-size: 23px;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+#more {display: none;}
 /* ABOUT */
 .about{
     /* display: flex; */

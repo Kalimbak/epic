@@ -37,10 +37,9 @@
           <p>
             Welcome to our organization's website, where we use data analytics to
             provide personalized career guidance to high school students and offer
-            opportunities for them to study abroad.
-          </p>
-          <button>Read more</button>
-         <span class="span">
+          opportunities for them to study abroad.  
+        </p>
+         <span id="more" >
           <p>
             We believe that all students deserve access to accurate and reliable
             information to help them make informed decisions about their future
@@ -50,7 +49,7 @@
             us to provide personalized career profiles for each student, which
             includes information about their skills, interests, and career goals.
             Our goal is to help students identify their strengths and interests,
-            explore potential career paths, and make informed decisions about their
+            explore potential career paths, and make informed decissions about their
             future education and career choices.
           </p>
           <p>
@@ -83,11 +82,15 @@
             please do not hesitate to contact us.
           </p>
           </span>
+          <button onclick="read()" id="btn" class="span1">Read more</button>
+
         </div>
         <div class="home2">
-          <img src="/images/IMG-20220628-WA0015.jpg" alt="">
+          <img src="/images/image3.jpeg" alt="">
+          
         </div>
       </div>
+      <p><span id="dots"></span><span id="more"></span></p>
     </section>
     <footer>
       <p>
@@ -95,5 +98,24 @@
         <span class="date"> </span> .all rights reserved
       </p>
     </footer>
+
+    
+    <script>
+    function read() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.querySelector(".span1");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 </body>
 </html>
