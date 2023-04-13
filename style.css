@@ -32,6 +32,15 @@ html{
 }
 body{
     font-size: 2rem;
+    
+}
+#home{
+     /* height: 1050px; */
+     /* background: linear-gradient(rgba(0, 0, 0, 0.565), rgba(0, 0, 0, 0.584)), url('./images/moutain.png'); */
+     /* background-repeat: no-repeat; */
+     background-position: center;
+     background-size: cover;
+     background-size: 8rem;
 }
 .navbar{
     display: flex;
@@ -45,9 +54,13 @@ body{
     position: fixed;
 }
 .navbar img{
-width: 12%;
-height: 60px;
-margin-left: 50px;
+margin-left: 60px;
+
+ height:100px; 
+ width:12%;
+}
+.navbar .image{
+    width: 10%;
 }
 ul{
     display: flex;
@@ -359,9 +372,77 @@ span {
     color: var(--clr-white);
     font-size: 2rem;
 }
-
+#links a{
+    color: white;
+    text-decoration: none;
+}
 .contact-details {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-left: 3rem;
 }
+.dropdown{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+.navbar ul{
+    display: none;
+}
+
+    .dropdown {
+        /* float: right; */
+        display: inline-block;
+        position: relative;
+        margin-right: 80px;
+        /* background-color: red; */
+        color: var(--clr-white);
+      }
+      .dropdown span{
+        color: var(--clr-white);
+        font-size: 1.1rem;
+    font-style: sans-serif;
+    cursor: pointer;
+      }
+      .dropdown-content {
+        margin-right: 80px;
+        display: none;
+        position: absolute;
+        width: 200px;
+        overflow: auto;
+        padding: 0 2px;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+    
+      }
+      .dropdown-content a {
+        /* text-align: center; */
+        align-items: center;
+        display: block;
+        
+        color: var(--clr-white);
+        padding: 8px;
+        text-decoration: none;
+        display: flex;
+        background-color: var(--clr-black);
+        padding: 10px 100px;
+        justify-content: space-between;
+        list-style-type: none;
+   
+        font-size: 1.1rem;
+    font-style: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight: bold;
+    padding: 0.75rem 0;
+      }
+      .dropdown-content a:hover {
+        font-size: 1.5rem;
+        transition: var(--transition);
+        color: #45b249;
+      }
+}
+
+
