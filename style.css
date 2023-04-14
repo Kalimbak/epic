@@ -39,8 +39,8 @@ body{
 }
 #home{
      /* height: 1050px; */
-     background: linear-gradient(rgba(0, 0, 0, 0.565), rgba(0, 0, 0, 0.584)), url('./images/imigongo.png');
-     background-repeat: repeat;
+     background: linear-gradient(rgba(0, 0, 0, 0.565), rgba(0, 0, 0, 0.584)), url('./images/line background.png');
+     /* background-repeat: no-repeat; */
      background-position: center;
      background-size: cover;
      background-size: 8rem;
