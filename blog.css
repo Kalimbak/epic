@@ -58,7 +58,7 @@ nav {
     display: block;
 }
 .logo {
-    height: 70px;
+    height: 50px;
     /* box-shadow: var(--dark-shadow); */
     background-color: transparent;
 }
@@ -89,13 +89,13 @@ nav {
     color: var(--clr-white);
     background: transparent;
     border-color: transparent;
-    transition: var(--transition);
+    /* transition: var(--transition); */
     cursor: pointer;
 }
 
-.nav-toggle:hover {
+/* .nav-toggle:hover {
     transform: rotate(90deg);
-}
+} */
 
 
 .links-container1 {
